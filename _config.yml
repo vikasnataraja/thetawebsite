@@ -1,29 +1,31 @@
 # --- Basic options --- #
 
 # Name of website
-title: Coffe Chronicles
+title: Machine Learning and Coffee Chronicles
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Machine Learning | Autonomous Vehicles | Coffee
 
 # Your name to show in the footer
-author: Some Person
+author: Vikas Nataraja
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "About"
-  Blog: "Blog"
+  Blog: "blog"
+  CV: "/assets/docs/Vikas_Nataraja_Resume.pdf"
+  Gallery: "gallery"
+  About Me: "about"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
-  Contact: "Contact"
+  Contact: "contact"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/cn_tower.png"
+avatar: "assets/img/cn_tower.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -39,11 +41,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  rss: true
+  email: "viha4393@colorado.edu"
+  # facebook: vikasnataraja
+  github: vikasnataraja
+  twitter: vikasnataraja
+  linkedin: vikas-hanasoge-nataraja
+  rss: false
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -69,7 +72,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "Vikas Nataraja"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -82,7 +85,7 @@ excerpt_length: 50
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
+navbar-text-col: "#000000"
 navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
@@ -158,14 +161,10 @@ title-separator: "-"
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
-# Facebook App ID
-#fb_app_id: ""
-
-
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Denver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -184,7 +183,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-      readtime: false # add estimated reading time on all blog posts
+      readtime: true # add estimated reading time on all blog posts
   -
     scope:
       path: "" # all files
@@ -206,3 +205,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
